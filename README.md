@@ -40,9 +40,6 @@ Intelligent-Web-Crawler/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
-├── tests/
-├── data/
-├── results/
 ├── main.py
 ├── requirements.txt
 └── README.md
