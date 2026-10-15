@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Web Crawler</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Intelligent Web Crawler</h1>
+        <p>Extract webpage information and compare crawling performance.</p>
+
+        <label for="urls">Enter URLs (one per line)</label>
+        <textarea id="urls" rows="5">https://example.com
+https://httpbin.org/get
+https://jsonplaceholder.typicode.com/posts/1</textarea>
+
+        <button id="crawlBtn" onclick="startCrawl()">Start Crawling</button>
+        <p id="message"></p>
+
+        <section id="performance" class="stats" hidden>
+            <div class="card">
+                <h3>Sequential Time</h3>
+                <p id="seqTime">-</p>
+            </div>
+            <div class="card">
+                <h3>Async Time</h3>
+                <p id="asyncTime">-</p>
+            </div>
+            <div class="card">
+                <h3>Speed Improvement</h3>
+                <p id="speedup">-</p>
+            </div>
+        </section>
+
+        <h2>Sequential Results</h2>
+        <div id="seqResults"></div>
+
+        <h2>Async Results</h2>
+        <div id="asyncResults"></div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
